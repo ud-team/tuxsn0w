@@ -1,13 +1,12 @@
 #Tuxsn0w, a frehsn0w alternative for *GNU+*Linux by UD-Team. Oh and it should work on the overpriced machines with a fruit on the back.
 
 from easygui import *
-#from checkm8 import *
 import subprocess
 
 title = "Tuxsn0w, by UD-Team"
 
 def pwnDFU():
-    #exploit()
+    subprocess.call(["ipwndfu/ipwndfu", "-p"])
     msg = "Have I PWNed your DFU? If so YAY! if not try again... Check you are actually in DFU mode and connected to this PC."
     msgbox(msg, title)
 
