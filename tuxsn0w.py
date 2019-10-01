@@ -1,4 +1,4 @@
-#Tuxsn0w, a frehsn0w alternative for *GNU+*Linux by UD-Team. Oh and it should work on the overpriced machines with a fruit on the back.
+#Tuxsn0w, a freshsn0w alternative for *GNU+*Linux by UD-Team. Oh and it should work on the overpriced machines with a fruit on the back.
 
 from easygui import *
 import subprocess
@@ -11,7 +11,7 @@ def pwnDFU():
     msgbox(msg, title)
 
 def ipswRestore():
-    msg = "NOTE: THIS IS UNTESTED FUNCTIONALITY! YOUR iDEVICE MAY NO LONGER BE BOOTABLE AFTER THE RESTORE! ALL DATA ON YOUR iDEVICE WILL BE LOST!"
+    msg = "NOTE: THIS FEATURE IS UNTESTED! YOUR iDEVICE MAY NO LONGER BOOT AFTER THE RESTORE! ALL DATA ON YOUR iDEVICE WILL BE LOST!"
     msgbox(msg, title)
     msg = "Select your IPSW"
     ipsw = fileopenbox(msg, title)
