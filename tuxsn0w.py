@@ -1,4 +1,4 @@
-#Tuxsn0w, a frehsn0w alternative for *GNU+*Linux by UD-Team. Oh and it should work on the overpriced machines with a fruit on the back.
+#Tuxsn0w, a freshsn0w alternative for *GNU+*Linux by UD-Team. Oh and it should work on the overpriced machines with a fruit on the back.
 
 from easygui import *
 #from checkm8 import *
