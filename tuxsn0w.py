@@ -12,7 +12,7 @@ def pwnDFU():
     msgbox(msg, title)
 
 def ipswRestore():
-    msg = "NOTE: THIS IS UNTESTED FUNCTIONALITY! YOUR iDEVICE MAY NO LONGER BE BOOTABLE AFTER THE RESTORE! ALL DATA ON YOUR iDEVICE WILL BE LOST!"
+    msg = "NOTE: THIS FEATURE IS UNTESTED! YOUR iDEVICE MAY NO LONGER BOOT AFTER THE RESTORE! ALL DATA ON YOUR iDEVICE WILL BE LOST!"
     msgbox(msg, title)
     msg = "Select your IPSW"
     ipsw = fileopenbox(msg, title)
