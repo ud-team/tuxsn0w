@@ -1,6 +1,11 @@
 #Tuxsn0w, a freshsn0w alternative for *GNU+*Linux by UD-Team. Oh and it should work on the overpriced machines with a fruit on the back.
 
-from easygui import *
+import sys
+try:
+    from easygui import *
+except:
+    print("ERROR: The \"easygui\" module is not installed, please download it from https://pypi.org/project/easygui/#files .")
+    sys.exit(0)
 #from checkm8 import *
 import subprocess
 
