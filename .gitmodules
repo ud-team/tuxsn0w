@@ -1,0 +1,4 @@
+[submodule "ipwndfu"]
+	path = ipwndfu
+	url = https://github.com/00p513-dev/ipwndfu/
+	branch = master
