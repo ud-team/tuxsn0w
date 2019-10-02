@@ -6,13 +6,12 @@ try:
 except:
     print("ERROR: The \"easygui\" module is not installed, please download it from https://pypi.org/project/easygui/#files .")
     sys.exit(0)
-#from checkm8 import *
 import subprocess
 
 title = "Tuxsn0w, by UD-Team"
 
 def pwnDFU():
-    #exploit()
+    subprocess.call(["ipwndfu/ipwndfu", "-p"])
     msg = "Have I PWNed your DFU? If so YAY! if not try again... Check you are actually in DFU mode and connected to this PC."
     msgbox(msg, title)
 
