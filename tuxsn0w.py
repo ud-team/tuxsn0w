@@ -14,7 +14,7 @@ title = "Tuxsn0w - by UD-Team"
 
 def pwnDFU():
     subprocess.call(["ipwndfu/ipwndfu", "-p"])
-    msg = "DFU should be PWNed. If reconnect you device and try again."
+    msg = "DFU should be PWNed. If not reconnect you device and try again."
     msgbox(msg, title)
 
 def ipswRestore():
@@ -45,7 +45,7 @@ def demote():
 def main():
     while True:
         msg = "Welcome to Tuxsn0w! Tuxsn0w is a jailbreaking tool using the Checkm8 exploit by UD-Team.\nPlease select your desired use with the buttons below.\n\nPlease also make sure your iDevice is connected to your computer."
-        choices = ["PWN my DFU (uses ipwndfu)", "Restore Custom IPSW", "Demote device (DANGEROUS)", "Exit"]
+        choices = ["PWN DFU (uses ipwndfu)", "Restore Custom IPSW", "Demote device (DANGEROUS)", "Exit"]
         choice = buttonbox(msg, title, choices)
 
         if choice == "PWN DFU (uses ipwndfu)":
