@@ -58,8 +58,6 @@ def main():
             demote()
 
         if choice == "Exit":
-            msg="Thanks for using Tuxsn0w. See you the next time you run out of charge :D!"
-            msgbox(msg, title)
             break
 
 
