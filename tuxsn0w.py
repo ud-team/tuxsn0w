@@ -34,7 +34,7 @@ def ipswRestore():
         msgbox(msg, title)
 
 def demote():
-    msg = "DANGER! DEMOTING YOUR DEVICE MAY RESULT IN UNFORESEEN SIDE EFFECTS! PROCEED WITH CAUTION!"
+    msg = "DANGER! DEMOTING YOUR DEVICE IS IRREVERSIBLE AND MAY RESULT IN UNFORESEEN SIDE EFFECTS! PROCEED WITH CAUTION!"
     choices = ["Continue", "Abort"]
     choice = buttonbox(msg, title, choices)
     if choice == "Continue":
