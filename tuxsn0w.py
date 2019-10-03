@@ -48,7 +48,7 @@ def main():
         choices = ["PWN my DFU (uses ipwndfu)", "Restore Custom IPSW", "Demote device (DANGEROUS)", "Exit"]
         choice = buttonbox(msg, title, choices)
 
-        if choice == "PWN my DFU (uses ipwndfu)":
+        if choice == "PWN DFU (uses ipwndfu)":
             pwnDFU()
 
         if choice == "Restore Custom IPSW":
