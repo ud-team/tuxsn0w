@@ -14,7 +14,7 @@ title = "Tuxsn0w - by UD-Team"
 
 def pwnDFU():
     subprocess.call(["ipwndfu/ipwndfu", "-p"])
-    msg = "Have I PWNed your DFU? If so YAY! if not try again... Check you are actually in DFU mode and connected to this PC."
+    msg = "DFU should be PWNed. If reconnect you device and try again."
     msgbox(msg, title)
 
 def ipswRestore():
@@ -44,7 +44,7 @@ def demote():
 
 def main():
     while True:
-        msg = "How would you like to PWN your iPhone?"
+        msg = "Welcome to Tuxsn0w!\nPlease select your desired use with the buttons below.\n\nPlease also make sure your iDevice is connected to your computer."
         choices = ["PWN my DFU (uses ipwndfu)", "Restore Custom IPSW", "Demote device (DANGEROUS)", "Exit"]
         choice = buttonbox(msg, title, choices)
 
