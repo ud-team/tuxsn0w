@@ -10,7 +10,7 @@ except:
     sys.exit(0)
 
 
-title = "Tuxsn0w, by UD-Team"
+title = "Tuxsn0w - by UD-Team"
 
 def pwnDFU():
     subprocess.call(["ipwndfu/ipwndfu", "-p"])
@@ -33,22 +33,34 @@ def ipswRestore():
         msg="Not an IPSW!!! Going back home..."
         msgbox(msg, title)
 
+def demote():
+    msg = "DANGER! DEMOTING YOUR DEVICE MAY RESULT IN UNFORESEEN SIDE EFFECTS! PROCEED WITH CAUTION!"
+    choices = ["Continue", "Abort"]
+    choice = buttonbox(msg, title, choices)
+    if choice == "Continue":
+        subprocess.call(["ipwndfu/ipwndfu", "--demote"])
+        msg = "Device demoted!"
+        msgbox(msg, title)
+
 def main():
     while True:
-        msg ="How would you like to PWN your iPhone?"
-        choices = ["PWN my DFU (uses ipwndfu)", "Restore Custom IPSW", "Exit"]
+        msg = "How would you like to PWN your iPhone?"
+        choices = ["PWN my DFU (uses ipwndfu)", "Restore Custom IPSW", "Demote device (DANGEROUS)", "Exit"]
         choice = buttonbox(msg, title, choices)
 
         if choice == "PWN my DFU (uses ipwndfu)":
             pwnDFU()
 
+        if choice == "Restore Custom IPSW":
+            ipswRestore()
+
+        if choice == "Demote device (DANGEROUS)":
+            demote()
+
         if choice == "Exit":
             msg="Thanks for using Tuxsn0w. See you the next time you run out of charge :D!"
             msgbox(msg, title)
             break
-
-        if choice == "Restore Custom IPSW":
-            ipswRestore()
 
 
 main()
