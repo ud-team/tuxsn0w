@@ -44,7 +44,7 @@ def demote():
 
 def main():
     while True:
-        msg = "Welcome to Tuxsn0w!\nPlease select your desired use with the buttons below.\n\nPlease also make sure your iDevice is connected to your computer."
+        msg = "Welcome to Tuxsn0w! Tuxsn0w is a jailbreaking tool using the Checkm8 exploit by UD-Team.\nPlease select your desired use with the buttons below.\n\nPlease also make sure your iDevice is connected to your computer."
         choices = ["PWN my DFU (uses ipwndfu)", "Restore Custom IPSW", "Demote device (DANGEROUS)", "Exit"]
         choice = buttonbox(msg, title, choices)
 
