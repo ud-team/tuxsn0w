@@ -9,9 +9,6 @@ except:
     print("ERROR: The \"easygui\" module is not installed, please download it from https://pypi.org/project/easygui/#files .")
     sys.exit(0)
 
-
-title = "Tuxsn0w - by UD-Team"
-
 def pwnDFU():
     subprocess.call(["ipwndfu/ipwndfu", "-p"])
     msg = "DFU should be PWNed. If not reconnect you device and try again."
@@ -44,6 +41,7 @@ def demote():
 
 def main():
     while True:
+		title = "Tuxsn0w - by UD-Team"
         msg = "Welcome to Tuxsn0w! Tuxsn0w is a jailbreaking tool using the Checkm8 exploit by UD-Team.\nPlease select your desired use with the buttons below.\n\nPlease also make sure your iDevice is connected to your computer."
         choices = ["PWN DFU (uses ipwndfu)", "Restore Custom IPSW", "Demote device (DANGEROUS)", "Exit"]
         choice = buttonbox(msg, title, choices)
