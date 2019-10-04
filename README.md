@@ -1,5 +1,5 @@
 # tuxsn0w
-A jailbreak tool for Checkm8 devices (supporting A5-A11).
+A developer jailbreak tool for GNU+Linux, supporting Checkm8 devices (supporting A5-A11).
 ## Supported operating systems
 ### Linux
 Yes, all features
